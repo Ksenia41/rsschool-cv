@@ -18,14 +18,14 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#about-me" class="nav-link">Summary</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#code-examples" class="nav-link">Code Examples </a></li>
+                    <li class="nav-item"><a href="#code-example" class="nav-link">Code Examples </a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                     <li class="nav-item"><a href="#languages" class="nav-link">Languages </a></li>
                 </ul>
             </nav>
-            <div>
+        </div>
 
     </header>
     <div class="container">
@@ -34,7 +34,7 @@
             <img src="assets/img/8D7E3317-C496-4EAE-8DC5-2E201B9C942D_1_105_c.jpg" class="my-avatar" alt="Avatar">
             <div class="name-position">
                 <h1>Ksenia Efimenkova</h1>
-                <h3>JUNIOR FRONT-END DEVELOPER</h3>
+                <h2>JUNIOR FRONT-END DEVELOPER</h2>
             </div>
         </section>
         <main class="main-container">
@@ -42,7 +42,7 @@
 
 
             <section class="section" id="contacts">
-                <h1 class="section-title">Contacts</h1>
+                <h2 class="section-title">Contacts</h2>
                 <ul class="contact-list">
                     <li class="tel-number">+375291708861</li>
                     <li class="email"><a href="ks.efimenkova@gmail.com">ks.efimenkova@gmail.com</a></li>
@@ -52,7 +52,7 @@
             </section>
 
             <section class="section" id="about-me">
-                <h1 class="section-title">About Me</h1>
+                <h2 class="section-title">About Me</h2>
                 <p>Hi! Currently, I am studying JavaScript with Rolling Scopes School. I also have diverse
                     experience in IT.
                     I graduated from the Faculty of Applied Mathematics at BSU, worked for three years as a Business
@@ -62,14 +62,14 @@
                     JavaScript in university, I decided to give it a second chance. As well, I hope this course will
                     help me
                     in recruiting and communication.</p>
-                <h2>Hard Skills</h2>
-                <ul class="hard-sckills-list">
+                <h3>Hard Skills</h3>
+                <ul class="hard-sckills-list" id="skills">
                     <li>JavaScript (in progress): Studying at the Rolling Scopes</li>
                     <li>Recruing and HR tools: HeadHunter, LinkedIn, Telegram</li>
                     <li>Python: ML basics</li>
                     <li>BI tools: Tableau, Cognos BI, MySQL, DB2</li>
                 </ul>
-                <h2>Soft Skills</h2>
+                <h3>Soft Skills</h3>
                 <ul class="soft-sckills-list">
                     <li>Effective verbal and written communication</li>
                     <li>Networking and empathy</li>
@@ -78,22 +78,25 @@
                 </ul>
             </section>
 
-            <section class="section" id="code-examples">
-                <h1 class="section-title">Code Examples</h1>
+            <section class="section" id="code-example">
+                <h2 class="section-title">Code Examples</h2>
                 <pre>
                 <code>
 function compare(s1, s2) {
     if (/^\D+$/gi.test(s1) && /^\D+$/gi.test(s2))
-    return s1.split('').map(n => n.toUpperCase().charCodeAt()).reduce((a, b) => a + b) === 
-            s2.split('').map(n => n.toUpperCase().charCodeAt()).reduce((a, b) => a + b);
+    return
+     s1.split('').map(n => n.toUpperCase().
+     charCodeAt()).reduce((a, b) => a + b) === 
+        s2.split('').map(n => n.toUpperCase().
+        charCodeAt()).reduce((a, b) => a + b);
     return true;
 }
                 </code>
                 </pre>
-                
+
             </section>
             <section class="section">
-                <h1 class="section-title">Education</h1>
+                <h2 class="section-title" id="education">Education</h2>
                 <ul class="education-list">
                     <li>Belarussian State University
                         <ul>
@@ -115,7 +118,7 @@ function compare(s1, s2) {
             </section>
 
             <section class="section" id="projects">
-                <h1 class="section-title">Projects</h1>
+                <h2 class="section-title">Projects</h2>
                 <ul>
                     <li><a href="https://github.com/Ksenia41/phoneshop-servlet-api">phoneshop-servlet-api</a></li>
                     <li><a href="https://github.com/Ksenia41/ml-project-demo">ML Project</a></li>
@@ -123,7 +126,7 @@ function compare(s1, s2) {
             </section>
 
             <section class="section" id="languages">
-                <h1 class="section-title">Languages</h1>
+                <h2 class="section-title">Languages</h2>
                 <ul>
                     <li>Russian - Native Spekaer</li>
                     <li>English - C1</li>
@@ -133,11 +136,13 @@ function compare(s1, s2) {
     </div>
 
     <footer>
+        <div class="container">
         <div>
             &copy; 2024 <a href="https://github.com/Ksenia41">Ksenia41</a>
         </div>
         <div>
-            <img src="assets/rsschool-logo.svg" alt="rs-logo" class="rs-logo">
+            <a href="https://rs.school/"><img src="assets/rsschool-logo.svg" alt="rs-logo" class="rs-logo"></a>
+        </div>
         </div>
     </footer>
 
