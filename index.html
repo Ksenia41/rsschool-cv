@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Page Title</title>
-</head>
-<body>
 
-<h1>This is a Heading </h1>
-<p>This is a paragraph.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+
+</head>
+
+
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code-examples" class="nav-link">Code Examples </a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages </a></li>
+                </ul>
+            </nav>
+            <div>
+
+    </header>
+    <div class="container">
+        <section class="section" id="profile">
+
+            <img src="assets/img/8D7E3317-C496-4EAE-8DC5-2E201B9C942D_1_105_c.jpg" class="my-avatar" alt="Avatar">
+            <div class="name-position">
+                <h1>Ksenia Efimenkova</h1>
+                <h3>JUNIOR FRONT-END DEVELOPER</h3>
+            </div>
+        </section>
+        <main class="main-container">
+
+
+
+            <section class="section" id="contacts">
+                <h1 class="section-title">Contacts</h1>
+                <ul class="contact-list">
+                    <li class="tel-number">+375291708861</li>
+                    <li class="email"><a href="ks.efimenkova@gmail.com">ks.efimenkova@gmail.com</a></li>
+                    <li class="location">Minsk, Belarus</li>
+                    <li class="github-link"><a href="https://github.com/Ksenia41">GitHub</a></li>
+                </ul>
+            </section>
+
+            <section class="section" id="about-me">
+                <h1 class="section-title">About Me</h1>
+                <p>Hi! Currently, I am studying JavaScript with Rolling Scopes School. I also have diverse
+                    experience in IT.
+                    I graduated from the Faculty of Applied Mathematics at BSU, worked for three years as a Business
+                    Intelligence Developer, and for the past two years, I have been working as an HR manager,
+                    helping to
+                    develop a startup. Additionally, I am constantly learning new things, and although I didn't like
+                    JavaScript in university, I decided to give it a second chance. As well, I hope this course will
+                    help me
+                    in recruiting and communication.</p>
+                <h2>Hard Skills</h2>
+                <ul class="hard-sckills-list">
+                    <li>JavaScript (in progress): Studying at the Rolling Scopes</li>
+                    <li>Recruing and HR tools: HeadHunter, LinkedIn, Telegram</li>
+                    <li>Python: ML basics</li>
+                    <li>BI tools: Tableau, Cognos BI, MySQL, DB2</li>
+                </ul>
+                <h2>Soft Skills</h2>
+                <ul class="soft-sckills-list">
+                    <li>Effective verbal and written communication</li>
+                    <li>Networking and empathy</li>
+                    <li>Time management and prioritization</li>
+                    <li>Effective learning</li>
+                </ul>
+            </section>
+
+            <section class="section" id="code-examples">
+                <h1 class="section-title">Code Examples</h1>
+                <pre>
+                <code>
+function compare(s1, s2) {
+    if (/^\D+$/gi.test(s1) && /^\D+$/gi.test(s2))
+    return s1.split('').map(n => n.toUpperCase().charCodeAt()).reduce((a, b) => a + b) === 
+            s2.split('').map(n => n.toUpperCase().charCodeAt()).reduce((a, b) => a + b);
+    return true;
+}
+                </code>
+                </pre>
+                
+            </section>
+            <section class="section">
+                <h1 class="section-title">Education</h1>
+                <ul class="education-list">
+                    <li>Belarussian State University
+                        <ul>
+                            <li>Faculty of Applied Math and Computer Science</li>
+                        </ul>
+                    </li>
+                    <li>Belarusian National Technical University (Masters Degree)
+                        <ul>
+                            <li>Faculty of Information Technologies and Robotics</li>
+                        </ul>
+                    </li>
+                    <li>Courses:
+                        <ul>
+                            <li>RS-School ML Basics (Certificate)</li>
+                            <li>Streamline (English C1)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="projects">
+                <h1 class="section-title">Projects</h1>
+                <ul>
+                    <li><a href="https://github.com/Ksenia41/phoneshop-servlet-api">phoneshop-servlet-api</a></li>
+                    <li><a href="https://github.com/Ksenia41/ml-project-demo">ML Project</a></li>
+                </ul>
+            </section>
+
+            <section class="section" id="languages">
+                <h1 class="section-title">Languages</h1>
+                <ul>
+                    <li>Russian - Native Spekaer</li>
+                    <li>English - C1</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div>
+            &copy; 2024 <a href="https://github.com/Ksenia41">Ksenia41</a>
+        </div>
+        <div>
+            <img src="assets/rsschool-logo.svg" alt="rs-logo" class="rs-logo">
+        </div>
+    </footer>
 
 </body>
+
+
+
 </html>
