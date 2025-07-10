@@ -63,7 +63,8 @@ footer{
   }
 
 .section{
-    width: 50%;
+    width: 40%;
+    padding-left: 5%;
 }
 
 .section-title {
@@ -86,3 +87,5 @@ footer{
     justify-content: space-around;
     margin-top: 2%;
   }
+
+ 
